@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STVD 40th — IDEALOGUE</title>
+
+  <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../.././common/pav1.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <base target="_blank">
+
+    <link rel="stylesheet" type="text/css" href="../.././common/mouse.css">
+    <link rel="stylesheet" type="text/css" href="../.././common/nav.css">
+    <link rel="stylesheet" type="text/css" href="../.././common/common.css">
+  <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+    <link rel="stylesheet" type="text/css" href="../.././common/footer.css"><link rel="stylesheet" type="text/css" href="../.././common/detail.css">
+    <style type="text/css">
+       @media only screen and (min-width: 767px) {
+       #fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
+              background: url(main.webp); background-attachment: fixed; background-size: 100% auto;}
+          #index_title{display: none;}
+          #detail_title{display: block;}
+            }
+            #nav {height: auto;}
+      @media only screen and (max-width: 767px) {
+          #index_title{display: none;}
+          #detail_title{display: block;}
+         .ToggleTitleKr{display:block;}
+          .ToggleTitleEn{display:none;}
+      }
+     
+    </style>
+</head>
+<body id="body">
+    
+
+
+<nav id="nav">
+      <!-- 한글과 영어 제목을 입력해 주세요!!--> 
+      <a class="nav_title flex_8">축하의 꽃, Celeblossom<span style=" margin: 0;">Flowers of Celebration, Celeblossom</span></a>
+      <div class="flex_1"></div>
+      <div class="nav_menu flex_3">
+        <a href="../.././project.html" class="flex_1">프로젝트<span>Project</span></a>
+        <a href="../.././profile.html" class="flex_1">프로필<span>Profile</span></a>
+        <a href="../.././guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+        </div>
+</nav>
+
+<nav id="m_nav">
+    <header id="navHead">
+      <a href="index.html" id="index_title"><img src="../.././common/icon_40th.svg"></a>
+      <a href="index.html" id="detail_title">
+        <!-- 한글 제목을 입력해 주세요!!-->
+        <p id="ToggleTitleKr">Pop up book- IDEALOGUE</p>
+        <!-- 영어 제목을 입력해 주세요!!-->
+        <span id="ToggleTitleEn">Pop up book- IDEALOGUE</span></a>
+      <div id="menuBtn">
+        <img src="../.././common/icon_mnav1.svg" class="menuBtn"></img>
+      </div>
+    </header>
+    <div id="navBox" class="menuWrap">
+        <a href="../.././project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
+        <a href="../.././profile.html">프로필 Profile</a>
+        <a href="../.././guestbook.html">방명록 Blossom</a>
+    </div>
+
+</nav>
+
+
+
+    <div id="fullImg" class="fullImg"></div>
+    <div id="Project">  
+      <section class="main" id="main">
+                  <div id="right"  class="flex_1">
+              <div class="flex_5">
+                  <img src="thumb.webp">
+              </div>
+              <div class="flex_1"></div>
+          </div>
+          
+
+
+
+
+          <div id="left" class="flex_1">
+              <div class="empty flex_1"></div>
+              <div class="text flex_4">
+                  <div class="togglePC">
+                        <div class="container">
+                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
+                            <label for="languageToggle" class="Ltoggle" style="display: flex;">
+                                <canvas id="langToggle" style="height: 3rem;
+                                cursor: pointer;"> </canvas>
+                           </label>
+                        </div>
+                  </div>
+                  <script>
+                    const f = new rive.Rive({
+                          src: "../.././common/toggle.riv",
+                          canvas: document.getElementById("langToggle"),
+                          autoplay: true,
+                          stateMachines: "State Machine 1",
+                          onLoad: () => {
+                            f.resizeDrawingSurfaceToCanvas();
+                          },
+                      });
+                  </script>
+
+
+
+                  <div class="Kr">
+                      <!--한글 작품 설명을 입력해 주세요.-->
+                      <p>
+                          만약 아이디어라는 무형의 개념을 의식한다면, 살아서 나와 소통할 수 있는 생명체처럼 여긴다면 어떨까? 그리고 그 생명이 살아가기 위해서 우리가 무언가를 해야 한다면 그것은 어떤 말, 어떤 행동일까?<br>
+                          이 책은 주인공 산수공이 아이디어를 말하는 모임에 초대받아 다른 창작자들과 아이디어와 교감을 나누는 방법을 터득해 나가는 이야기이다. 대화가 진행되는 부분은 컷 만화 형식의 그래픽 노블로, 아이디어에 관해 말하는 부분은 캡션 형식의 텍스트와  일러스트로 구성되어 주인공 산수공의 이야기와 함께 이 질문에 관한 생각을 함축적으로 이야기한다.<br>
+                          17*23cm, 31p, 디지털 드로잉, 하드커버, 팝업 바인딩
+                                
+                      </p>
+                      <!--한글 이름과 대표 sns 주소를 입력해 주세요.-->
+                      <p>김나윤<a href="https://www.instagram.com/junoryun/">instagram @junoryun</a></p>
+                  </div>
+                  <div class="En">
+                      <!--영어 작품 설명을 입력해 주세요.-->
+                      <p>
+                          What if we were conscious of the intangible concept of ideas, if we thought of them as living things that could come alive and communicate with us, and if we had to do something to make them come alive, what would those words and actions be?<br>
+                          The book tells the story of Sansukong, the protagonist, who is invited to an idea meeting where he learns how to communicate ideas with other creatives. The book is a graphic novel with cut comic strips for the conversations and captioned text and illustrations for the ideas, telling the story of the protagonist and his thoughts on this question.<br>17*23cm, 31p, digital drawing, hard cover, pop up binding
+
+                      </p>
+                      <!--영어 이름과 대표 sns 주소를 입력해 주세요.-->
+                      <p>KIM NAYUN<a href="https://www.instagram.com/junoryun/">instagram @junoryun</a></p>
+                  </div>
+              </div>
+              <div class="empty flex_1" style="order:4;"></div>
+      </section>
+    
+      
+
+          
+      <div id="details" class="details">
+         
+          <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
+          <img src="main.webp" id="fullImg2">
+          <img src="1.webp">
+         
+      </div>
+
+
+
+
+
+      <div class="toggleM" id="toggleM">
+                        <div class="container">
+                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
+                            <label for="languageToggle" class="Ltoggle">
+                                <img src="../.././common/KrToEn.svg" id="imgId">
+                           </label>
+                        </div>
+      </div>
+
+
+
+
+
+      <div id="info" class="info">
+          <div class="track flex_2">
+              <img src="../.././common/sparkle.svg">
+              <!--트랙 이름을 입력해주세요. 아래 목록에서 복사해 사용하세요. 
+                영상디자인(Video Design), 일러스트레이션(Illustration), 편집디자인(Editorial Design), 광고·서비스디자인(AD·Service Desing), 아이덴티티디자인(Identity Design), UX디자인(UX Design)-->
+              <p class="Kr mKr">일러스트레이션</p>
+              <p class="En mEn">Illustration</p>
+          </div>
+          
+          <div class="flex_2">
+              <!--한글 이름과 링크 내용을 입력해 주세요.-->
+              <p class="name_Kr flex_1 Kr mKr"><a href="../.././video/18100866/detail.html">김나윤</a></p>
+              <!--영어 이름과 링크 내용을 입력해 주세요.-->
+              <p class="name_En flex_1 En mEn"><a href="../.././video/18100866/detail.html">KIM NAYUN </a></p>
+          </div>
+          <div class="empty flex_3"><p>.</p></div>
+          
+          <div class="sns1 flex_2">
+              <!--SNS 링크와 이름을 입력해 주세요.-->
+              <a href="https://www.instagram.com/junoryun/">instagram @junoryun</a>
+          </div>
+          <div class="sns2 flex_2">
+              <!--SNS 링크와 이름을 입력해 주세요. SNS링크가 하나인 경우 아래의 <a>~</a>를 지워 주세요.-->
+              <a href="https://www.behance.net/nayunkim">behance.net/nayunkim</a>
+          </div>
+          <div class="empty flex_1"><p>.</p></div>
+      </div>
+    
+    
+    
+    
+  <!-- 푸터 -->
+    <footer>
+      <img src="../.././common/footer_Left.svg" class="footer_Left">
+      <img src="../.././common/footer_Right.svg" class="footer_Right">
+      
+      <div>
+        <p class="footerKr">서울과학기술대학교</br>시각디자인학과 제40회 졸업전시</p>
+        <p class="footerEn">2022©Seoul National University of Science</br>and Technology. All Rights Reserved.</p>
+      </div>
+      <div class="flex">
+        
+          <a  class="link" href="https://vd.seoultech.ac.kr/" >
+            <img src="../.././common/seoultech.svg" class="seoultechIcon">
+            
+          </a>
+        
+          <a  class="link" href="https://www.instagram.com/snad_vd/">
+            <img src="../.././common/instagram.svg" class="instaIcon">
+            
+          </a>
+        
+      </div>
+         
+    </footer>
+
+
+
+
+<script src="../.././common/detailnav.js"></script>
+<script src="../.././common/font.js"></script>
+<script src="../.././common/footer.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
+<script type="text/javascript">
+  if (matchMedia("only screen and (max-width: 767px)").matches) {window.onload = TopUpload_m();}
+  
+
+  function TopUpload_m () {  // 화면이 뜬 뒤 처리
+
+  var obj1 = document.getElementById('detail_title'); 
+  var obj1_height = obj1.offsetHeight;
+
+  document.getElementById('main').style.paddingTop = obj1_height + 30 + 'px'
+
+};
+  function TopUpload_pc () {  // 화면이 뜬 뒤 처리
+
+  var obj1 = document.getElementById('nav');
+  var obj1_height = obj1.offsetHeight;
+
+  
+
+};
+
+
+
+
+
+  function NavUpload () {  // 화면이 뜬 뒤 처리
+
+  var obj1 = document.getElementById('navHead'); 
+  var obj1_height = obj1.offsetHeight;
+
+  document.getElementById('navBox').style.paddingTop = obj1_height + 30 + 'px'
+
+};
+  
+  function MEnMode(){document.getElementById("mKr").style.fontWeight = "200";
+        document.getElementById("mKr").style.color = "#13519c";
+        document.getElementById("mKr").style.backgroundColor = "#f2f6fb";
+        document.getElementById("mEn").style.color = "#f2f6fb";
+        document.getElementById("mEn").style.fontWeight = "800";
+        document.getElementById("mEn").style.backgroundColor = "#13519c";};
+
+  function MKrMode(){document.getElementById("mEn").style.fontWeight = "200";
+        document.getElementById("mEn").style.color = "#13519c";
+        document.getElementById("mEn").style.backgroundColor = "#f2f6fb";
+        document.getElementById("mKr").style.color = "#f2f6fb";
+        document.getElementById("mKr").style.fontWeight = "800";
+        document.getElementById("mKr").style.backgroundColor = "#13519c";}; 
+
+  function EnMode() {document.getElementById("Kr").style.fontWeight = "200";
+        document.getElementById("Kr").style.color = "#13519c";
+        document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
+        document.getElementById("En").style.color = "#f2f6fb";
+        document.getElementById("En").style.fontWeight = "800";
+        document.getElementById("En").style.backgroundColor = "#13519c";
+        };
+
+  function KrMode(){document.getElementById("En").style.fontWeight = "200";
+        document.getElementById("En").style.color = "#13519c";
+        document.getElementById("En").style.backgroundColor = "#f2f6fb";
+        document.getElementById("Kr").style.color = "#f2f6fb";
+        document.getElementById("Kr").style.fontWeight = "800";
+        document.getElementById("Kr").style.backgroundColor = "#13519c";
+        };
+
+  window.onload = LanguageToggle();
+  function LanguageToggle(){
+    
+  var Toggle = document.getElementById("languageToggle");
+  var Kr = document.getElementsByClassName("Kr");
+  var NameKr = document.getElementsByClassName("name_Kr");
+  var NameEn = document.getElementsByClassName("name_En");
+  var mKr = document.getElementsByClassName("mKr");
+  var En = document.getElementsByClassName("En");
+  var mEn = document.getElementsByClassName("mEn");
+  var ToggleTitleKr = document.getElementById("ToggleTitleKr");
+   var ToggleTitleEn = document.getElementById("ToggleTitleEn");
+  
+    if (matchMedia("only screen and (min-width: 767px)").matches) {
+      for (var i=0;i<Kr.length;i+=1) {
+      if (Toggle.checked == true) {
+        Kr[i].style.display = "none";
+        En[i].style.display = "block";
+        EnMode();
+        
+      } else {
+        Kr[i].style.display = "block";
+        En[i].style.display = "none";
+        KrMode();
+      };
+    };
+  } else {
+      for (var i=0;i<Kr.length;i+=1) {
+      if (Toggle.checked == true) {
+        ToggleTitleKr.style.display = "none";
+        ToggleTitleEn.style.display = "block";
+        Kr[i].style.display = "none";
+        NameKr[i].style.display = "none";
+        NameEn[i].style.display = "block";
+        mKr[i].style.display = "none";
+        En[i].style.display = "block";
+        mEn[i].style.display = "block";
+        document.getElementById("imgId").src = "../.././common/EnToKr.svg";
+        EnMode();
+        NavUpload();
+        TopUpload();
+      } else {
+        ToggleTitleKr.style.display = "block";
+        ToggleTitleEn.style.display = "none";
+        Kr[i].style.display = "block";
+        mKr[i].style.display = "block";
+        NameKr[i].style.display = "block";
+        NameEn[i].style.display = "none";
+        En[i].style.display = "none";
+        mEn[i].style.display = "none";
+        NavUpload();
+        TopUpload();
+        KrMode();
+        document.getElementById("imgId").src = "../.././common/KrToEn.svg";
+      };
+    };
+  };
+    
+
+    
+  };
+</script>
+<script type="text/javascript">
+
+var navContainer = document.getElementById('nav');
+var Height = window.innerHeight;
+var header = document.getElementById("nav");
+
+
+var isVisible = false;
+$(window).on('scroll',function() {
+    if (checkVisible($('#fullImg'))&&!isVisible) {
+        header.classList.add("hide");
+        return;
+    }
+    if (checkVisible($('#main'))&&!isVisible) {header.classList.remove("hide");
+        return; 
+
+    }
+    if (checkVisible($('#details'))&&!isVisible) {
+
+
+
+(function(){
+
+        var doc = document.documentElement;
+        var w = window;
+
+        var prevScroll = w.scrollY || doc.scrollTop;
+        var curScroll;
+        var direction = 0;
+        var prevDirection = 0;
+
+        var header = document.getElementById('nav');
+
+        var checkScroll = function() {
+
+       /*
+       ** Find the direction of scroll
+       ** 0 - initial, 1 - up, 2 - down
+       */
+
+       curScroll = w.scrollY || doc.scrollTop;
+       if (curScroll > prevScroll) { 
+         //scrolled up
+      direction = 2;
+       }
+       else if (curScroll < prevScroll) { 
+      //scrolled down
+      direction = 1;
+       }
+
+       if (direction !== prevDirection) {
+         toggleHeader(direction, curScroll);
+       }
+    
+       prevScroll = curScroll;
+     };
+
+     var toggleHeader = function(direction, curScroll) {
+    if (direction === 2 && curScroll > 52) { 
+      
+      //replace 52 with the height of your header in px
+
+      header.classList.add('hide');
+      prevDirection = direction;
+    }
+    else if (direction === 1) {
+      header.classList.remove('hide');
+      prevDirection = direction;
+    }
+  };
+  
+  window.addEventListener('scroll', checkScroll);
+
+})();
+   
+
+(function(){
+
+        var doc = document.documentElement;
+        var w = window;
+
+        var prevScroll = w.scrollY || doc.scrollTop;
+        var curScroll;
+        var direction = 0;
+        var prevDirection = 0;
+
+        var header = document.getElementById('m_nav');
+
+        var checkScroll = function() {
+
+       /*
+       ** Find the direction of scroll
+       ** 0 - initial, 1 - up, 2 - down
+       */
+
+       curScroll = w.scrollY || doc.scrollTop;
+       if (curScroll > prevScroll) { 
+         //scrolled up
+      direction = 2;
+       }
+       else if (curScroll < prevScroll) { 
+      //scrolled down
+      direction = 1;
+       }
+
+       if (direction !== prevDirection) {
+         toggleHeader(direction, curScroll);
+       }
+    
+       prevScroll = curScroll;
+     };
+
+     var toggleHeader = function(direction, curScroll) {
+    if (direction === 2 && curScroll > 52) { 
+      
+      //replace 52 with the height of your header in px
+
+      header.classList.add('hide');
+      prevDirection = direction;
+    }
+    else if (direction === 1) {
+      header.classList.remove('hide');
+      prevDirection = direction;
+    }
+  };
+  
+  window.addEventListener('scroll', checkScroll);
+
+})();
+
+
+} 
+});
+
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+
+
+</script>
+
+
+</body>
+</html>
