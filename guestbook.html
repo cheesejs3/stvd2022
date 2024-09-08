@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="STVD 40th - Celeblossom">
+  <meta property="og:description" content="서울과학기술대학교 시각디자인전공 제40회 졸업전시">
+  <meta property="og:image" content="./common/metaimg.jpg">
+  <link rel="icon" type="image/x-icon" href="./common/pav1.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+  <script>
+    const itemData = [
+  {
+    author: "유현영",
+    content: "여러분 다들 멋져요! 축하드립니다 ><",
+    flower: "1",
+  },
+  {
+    author: "도수미",
+    content: "다들 정말정말 수고하셨어요! 1년간 너무 고생해서 다들 멋쟁이 ><",
+    flower: "1",
+  },
+  {
+    author: "내가3등",
+    content:
+      "다들 정말 수고 많으셨습니다. 졸전은 광기다. 1년 열심히 달려 결과물을 만들어 냈다는 것 자체가 대단한 일입니다. 보러 온 가족친구들과 즐거운 시간 보내시고 손님맞이와 철거까지 파이팅입니다! 다 끝나고 나서 온천에라도 가서 휴식 푹 하실 수 있길 바랍니다. ♨️",
+    flower: "3",
+  },
+  {
+    author: "장서현",
+    content: "다들 고생 많으셨습니다! 꽃길만 걷기를^0^!!",
+    flower: "1",
+  },
+  {
+    author: "박채원",
+    content: "수고하셨습니다~~ 멋있어용",
+    flower: "1",
+  },
+  {
+    author: "김용래",
+    content: "한 해동안 다들 고생 많으셨습니다! ☺️",
+    flower: "1",
+  },
+  {
+    author: "눙눙이",
+    content: "다들 정말 수고 많으셨습니다! 축하드립니당",
+    flower: "1",
+  },
+  {
+    author: "호호",
+    content: "최고의 전시....최고의 갖품들... 짱짱과기대이시다",
+    flower: "1",
+  },
+  {
+    author: "융",
+    content: "임뱁세방방구",
+    flower: "1",
+  },
+  {
+    author: "이하은",
+    content: "잘 보고 갑니다",
+    flower: "1",
+  },
+  {
+    author: "지나가던 산디",
+    content: "멋들어집니다.",
+    flower: "1",
+  },
+  {
+    author: "지나가던인간",
+    content: "우와 너무 멋지다..",
+    flower: "1",
+  },
+  {
+    author: "윤진",
+    content: "무사히 졸전 마치신 분들 모두 축하드립니다><",
+    flower: "1",
+  },
+  {
+    author: "고생하셨어요",
+    content: "너무 멋진 전시~~ 나중에 또 보러 올게요 ㅎㅎ",
+    flower: "1",
+  },
+  {
+    author: "가은이친구.",
+    content:
+      "가은아 고생했다~~ 내가 널 보러 주말에 꼭 가도록 하마~~ 도와준 건 나중에 백만원으로 갚아 ♥ 장난이야",
+    flower: "1",
+  },
+  {
+    author: "한솔맘",
+    content: "한솔아~ 4년동안 잠못자고 학업하느라 애썼어 이제 엄마랑 놀자",
+    flower: "1",
+  },
+  {
+    author: "우현",
+    content:
+      "우리 웅이 4년간 수고너무너무 많았어 졸업 진심으로 축하하고 오늘을 만끽하자 ! !",
+    flower: "1",
+  },
+  {
+    author: "성웅짱",
+    content: "웅아 고생 많았다 초대해줘서 고마워",
+    flower: "1",
+  },
+  {
+    author: "도연",
+    content:
+      "비아의 졸업 전시회를 진심으로 축하합니다~(하트) 전부 다 너무 멋진 작품이었습니다!! 준비하느라 고생한 비아에게 박수를~~~!(하트 100개)",
+    flower: "1",
+  },
+  {
+    author: "이은실",
+    content:
+      "어느때보다 멋진 전시 아이덴티티 디자인이에요^^ 졸준위와 전시학생들, 지도해주신 교수님 모두수고 많으셨습니다^^",
+    flower: "3",
+  },
+  {
+    author: "최혜진",
+    content:
+      "현서, 현영이 너무 고생 많았오~♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡ 졸업전시 축하행~~~~",
+    flower: "1",
+  },
+  {
+    author: "유은",
+    content:
+      "40회졸업전시 너무 멋집니다. 과기대 시디인들 모두 너무 자랑스럽고 진심으로 사랑합니다^^",
+    flower: "1",
+  },
+  {
+    author: "영미닛",
+    content:
+      "우오아ㅏ아앙 드디어 정혜림 졸업한다~~ 졸전은 아직 안봤지만 뭐 멋지겠지 (^3^)~✩ 일요일에 도슨트 기대할🤍",
+    flower: "6",
+  },
+  {
+    author: "Peter",
+    content: "You guys are awasome!!!",
+    flower: "1",
+  },
+  {
+    author: "자두이모",
+    content: "한솔아~ 축하해",
+    flower: "1",
+  },
+  {
+    author: "소정",
+    content:
+      "정말 멋져요... 다들 너무 고생 많으셨습니다!!! 그리고 지현아!!! 너무 고생 많았어!!!❤️🥰💕",
+    flower: "1",
+  },
+  {
+    author: "박지영",
+    content: "김도연!!!!!!!!!!!우리가 드디어 졸업을 하네재능 적당히 있어라^^^",
+    flower: "1",
+  },
+  {
+    author: "마참내!",
+    content: "모두들 수고했어요! 노력들이 엄청 느껴지는 전시였어요!!",
+    flower: "5",
+  },
+  {
+    author: "엄마가",
+    content: "우리 딸 수고많았어 훌륭한 작품도 완죤 최고~~~~",
+    flower: "1",
+  },
+  {
+    author: "센",
+    content:
+      "노비팟 너무 고생했고, 결과물들 멋지게 잘봤어! 내년에도 또 보자아앙",
+    flower: "1",
+  },
+  {
+    author: "준석",
+    content: "도은아 한해 너무 수고많았고 앞으로 축복길만 걷길...!",
+    flower: "1",
+  },
+  {
+    author: "갈",
+    content:
+      "노비팟 미친자들아 너네 왜이렇게잘했어 나졸전 이제어캐해 휴학1년더해야겠어",
+    flower: "4",
+  },
+  {
+    author: "휑",
+    content: "곰펑슨 최고야 S2 멋진 작품 만드느라 수고 많았어 ~ !",
+    flower: "1",
+  },
+  {
+    author: "졸업생",
+    content: "다들 멋져용^0^",
+    flower: "3",
+  },
+  {
+    author: "따낑맘.따낑리모",
+    content:
+      "따낑양~!!! 넘넘 고생 해쏘~!!^^ 따낑 친구들~ 이번 작품들 하나 하나 정성 가득해서 가슴에 와닿아 품고 갑니다. 축하해요.",
+    flower: "1",
+  },
+  {
+    author: "공주",
+    content:
+      "혜림시 ,, 축하해요 ,, 그 동안 고생 많았어요 ,, 당신이 최고예요 ,,",
+    flower: "1",
+  },
+  {
+    author: "혜림시",
+    content:
+      "혜림시 ,, 축하해요 ,, 그 동안 고생 많았어요 ,, 당신이 최고예요 ,,",
+    flower: "1",
+  },
+  {
+    author: "한쨩",
+    content:
+      "미술천재혜림이의미친작품 너 만 보 여... 넘 수고햇슈다아앙앙??!! 알랍❤️❤️",
+    flower: "6",
+  },
+  {
+    author: "감자수제비",
+    content: "다들 너무 멋져요ㅠㅠ 저는 한 7년 공부해야 졸업할 수 있을듯,,",
+    flower: "1",
+  },
+  {
+    author: "박은래",
+    content:
+      "지현아델리나! 졸전 축하하구 수고많았어👍🏻 너의 반짝반짝 빛나는 앞날을 늘 응원해!!!❤️❤️❤️❤️",
+    flower: "1",
+  },
+  {
+    author: "다빈치 연습생 동기한명",
+    content: "졸전 너무 멋져요 다빈치아이돌 데뷔 추카",
+    flower: "1",
+  },
+  {
+    author: "유",
+    content:
+      "다들 뭔데욧!! 너무 잘했자너ㅜ 배신감 개쩔ㅡㅡ 진심 수고 많으셨습니다...흑",
+    flower: "1",
+  },
+  {
+    author: "네로",
+    content: "잘했다옹~",
+    flower: "1",
+  },
+  {
+    author: "태천",
+    content: "개쩌네 성웅 멋져잉!",
+    flower: "1",
+  },
+  {
+    author: "깡지",
+    content: "성웅아 수고했엉 최고의 졸작!",
+    flower: "1",
+  },
+  {
+    author: "셈사",
+    content: "성웅이 최고 잘봤어~",
+    flower: "1",
+  },
+  {
+    author: "지현",
+    content: "🎉🎉🎉🎉",
+    flower: "1",
+  },
+  {
+    author: "...",
+    content: "ㅈㅎ아 남자친구 꼭 생겼으면 좋겠다 화이팅",
+    flower: "1",
+  },
+  {
+    author: "최신영",
+    content:
+      "언니 졸업축하해요 .. 저희 대학보내달라고 징징댈때가 엊그제같은데 벌써 둘다졸업이라니.. 아니 오는길에 제가 손이 비어있다는게 생각났지뭐예요 선물 진짜예쁜거 준비했는데 너무너무미안해요 제가 진짜 열심히만든건데. .. ... 택배로 보낼 .그리고 채식키트 저 만들어줘요",
+    flower: "1",
+  },
+  {
+    author: "최신영",
+    content: "과기대최고아웃풋 최현서~~~~~~ 후우우~~~~~~~",
+    flower: "1",
+  },
+  {
+    author: "클라네르",
+    content: "정말 멋져요!!! 고생들 많이 하셨습니다 꽃 길만 걸으세요~",
+    flower: "3",
+  },
+  {
+    author: "와와",
+    content:
+      "졸전 진심으로 축하드립니다! 1년간의 노고가 느껴져요... 고생 많으셨고 꽃길만 걸어요 🌸🌸🌸",
+    flower: "5",
+  },
+  {
+    author: "가은",
+    content:
+      "제일고 최고 아웃풋서울 과기대 남 승 주작품 보고 눈물 한방울 ..승주 제 친구예요 .... 그동안 수고했떠 ❤️",
+    flower: "1",
+  },
+  {
+    author: "융디꿍디",
+    content: "박금강 빗치 넘 고생 많았어 차기작 기대한다~~~~~~~^_____^❤️❤️❤️❤️",
+    flower: "7",
+  },
+  {
+    author: "데뷔축하드립니다",
+    content:
+      "대학교라는 연습실을 벗어나.....사회라는 무대에 올라가....디자인이라는 댄스를 추는.....2022다빈치 :아이돌 데뷔추카추카^^! 졸업을 축하합니다. 앞으로 승승장구하기를^^! 나도빨링 데뷔해야지 안뇽~!~! 사랑해 여러분~ 우리들~",
+    flower: "3",
+  },
+  {
+    author: "돌철",
+    content:
+      "오다가 죽을뻔했습니다유나님의 건승을 바라겠습니다유튜브 돌철 화이팅^_^",
+    flower: "1",
+  },
+  {
+    author: "현영",
+    content: "안녕하세용! 다들 수고하셨어용!",
+    flower: "1",
+  },
+  {
+    author: "승주",
+    content: "멋져요~~",
+    flower: "1",
+  },
+  {
+    author: "다니",
+    content: "지연아 나랑 사고자 .,,, 나랑 사궈조... ㅠ      ㅠ",
+    flower: "1",
+  },
+  {
+    author: "사궈자",
+    content: "졸전 마치면 나랑 사궈자 알갰지 으나 사궈 나랑 사궈",
+    flower: "1",
+  },
+  {
+    author: "김주영",
+    content: "졸전당사자도 축하메세지를 남길 권리가 있어",
+    flower: "1",
+  },
+  {
+    author: "랩노예",
+    content: "미대분들 졸업 축하드려요",
+    flower: "1",
+  },
+  {
+    author: "ㅈㅇ",
+    content: "우리 티엣탄이 잘했다잉~~~~~",
+    flower: "1",
+  },
+  {
+    author: "유나언니체고",
+    content: "수고 넘넘 많았오 ㅠㅠ 학교 떠났다고 나까지 떠나면 안된다..!",
+    flower: "3",
+  },
+  {
+    author: "ㄸㅂㅌ",
+    content: "우리 티엣탄이 수고 많았고 역시 멋지네",
+    flower: "1",
+  },
+  {
+    author: "익명의후배123",
+    content: "윤경선배 졸업 너무너무 축하드려요 변기 짱",
+    flower: "1",
+  },
+  {
+    author: "엄마아빠❤️",
+    content: "사랑하는 딸 도연아~ 고생많았어~ 멋전 전시 잘 봤어...💙💙💙",
+    flower: "4",
+  },
+  {
+    author: "이병학",
+    content:
+      "나윤이랑 웹팀 잘했어요! 너무 멋지네요^^ 수고많았어요!!😀😀😀😀😀😀😀🥰🥰🥰오 깨알같은 이모티콘 디테일",
+    flower: "5",
+  },
+  {
+    author: "다혜",
+    content: "민주다민 고생해쒀 기다려줘 같이 놀아~~~~~",
+    flower: "1",
+  },
+  {
+    author: "이혜인",
+    content: "민쥬 다민 고생했어~~~~~졸업하고 자유로워지자",
+    flower: "1",
+  },
+  {
+    author: "짝짝짝",
+    content: "방명록 예술이네요~!^^ 역시 과기대 시디과답네요 :)",
+    flower: "1",
+  },
+  {
+    author: "꽃다발이 바뀐다",
+    content: "귀여워",
+    flower: "7",
+  },
+  {
+    author: "지나가는공예",
+    content: "축하드려요~~!!!! 읭멋있당",
+    flower: "3",
+  },
+  {
+    author: "복자",
+    content: "살앙하는 윤경언니❤️ 졸전 너무 멋져요!!!💕💕💕 졸업 축하해 사랑해",
+    flower: "1",
+  },
+  {
+    author: "한서연",
+    content:
+      "현서언니 졸전 너무 축하하고 고생 많았어요 ㅠ 이제는 열심히 놀길 ㅎㅎ",
+    flower: "1",
+  },
+  {
+    author: "민데이지",
+    content:
+      "효선언니 졸업전시 축하해 🍓💕얼마나 고생한지 눈에 훤하다 울 웅니 최고오👍🏻",
+    flower: "1",
+  },
+  {
+    author: "소라",
+    content: "탄🖤,려립💚,현서❤️,현영💛 졸전 축하한다~~🎉",
+    flower: "1",
+  },
+  {
+    author: "채채",
+    content: "탠아~~~~~~너가 제일 멋졍 하고싶은거 다해라~~!~!}!!}!~!!!!!❤️",
+    flower: "1",
+  },
+  {
+    author: "채원",
+    content:
+      "태연아 !! 작품들에 너가 그대로 녹아 들어간게 너무 신기하고 멋있었어 ><졸전 준비하느라 고생 많았구 4년동안 공부하느라 더 고생 많았어🤍잉뿌삐의 자랑 김태연 사랑행❤️",
+    flower: "1",
+  },
+  {
+    author: "카즈하",
+    content:
+      "성웅이 너무 멋지다 고생많이했고 앞으로도 좋은일 가득하자 항상 응원해 르세라핌 도 많이 응원해주세요!",
+    flower: "1",
+  },
+  {
+    author: "수택",
+    content: "헤림 정말정말 축하해!!!!!♡♡♡ 고생했어!!!!",
+    flower: "1",
+  },
+  {
+    author: "김세워니",
+    content:
+      "우리 배기워니 너무 멋지고 자랑스럽고 ㅠㅠ 눈물이가 다 난다 나 ㅜㅜㅜㅜ 졸전 못 가서 너무 슬픈 유학생은 주먹을 깨물고 광광 울어··· 워니 그동안 너무 고생했고 수고했고 그 누가 뭐라해도 난 항상 워니 편이야~ 워니의 앞날은 꽃길만 가득할거야 내가 항상 응원해! 바부탱!",
+    flower: "7",
+  },
+  {
+    author: "정재현",
+    content:
+      "여자친구 따라서 와봤는데 나윤경씨 작품 인상적이었어요^^ 고생많았네요 앞으로 행복하세요~^^",
+    flower: "1",
+  },
+  {
+    author: "정재현",
+    content: "여자친구 작품 보러왔는데 다들 정말 대단하시네요^^ 화이팅",
+    flower: "1",
+  },
+  {
+    author: "걸스데이 소진",
+    content:
+      "윤경씨~ 졸전 축하해요^^♡ 고생많았구 이제 해방되시길 :D 과기대 좋네요 ^___^ - 소진 다녀감",
+    flower: "1",
+  },
+  {
+    author: "전애인",
+    content: "멋있다 문성웅!",
+    flower: "1",
+  },
+];
+
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="./common/mouse.css">
+  <link rel="stylesheet" type="text/css" href="./common/nav.css">
+  <link rel="stylesheet" type="text/css" href="./common/common.css">
+  <link rel="stylesheet" type="text/css" href="./common/footer.css">
+<title>방명록</title>
+<style type="text/css">
+  *::-webkit-scrollbar {display: none;}
+  #index_title{display: block;}
+  #detail_title{display: none;}
+
+  body{-ms-overflow-style: none; scrollbar-width: none; }
+  body::-webkit-scrollbar {display: none;}
+  button{
+    border: 2px solid #2f5c9a;
+    color: #2f5c9a; 
+    cursor: pointer;
+    background-color: white;
+    font-size:calc(2pt + 1.3vw); 
+    font-weight: 500; 
+    padding: 2%;
+    line-height: 1.3;
+  }
+  label{
+    width: 20%;
+    border-radius:20%; 
+    margin: 1vh 0 1vh 10px;
+    height: 10vh; 
+    cursor: pointer;
+  }
+  textarea, input{
+    font-family: inherit;
+    font-size: inherit;
+    text-size-adjust: none;
+  }
+  main{
+    height: auto;
+  }
+  #animationLeftContainer, #animationRightContainer {
+    display: none;
+    position: fixed;
+    z-index: 21989491;
+    height: 100%;
+    bottom: 0;
+    aspect-ratio: 16 / 9;
+  }
+  #animationBackContainer {
+    display: none;
+    position: fixed;
+    z-index: 21989491;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    aspect-ratio: 16 / 9;
+  }
+  #animationRightContainer {
+    right: 0;
+  }
+  #preview p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 12pt;
+
+  }
+  #preview_Guide {
+    text-align: center;
+  }
+  #selectButton {
+    display: flex;
+  }
+  label[for="f1"] {
+    margin-left: 0;
+  }
+  #inputContainer p{
+    margin-bottom: 1vh;
+  }
+  #send {
+    text-align: center;
+    width:100%;
+  }
+  input,textarea{width: 100%;
+    border: 2px solid #2f5c9a;
+    font: inherit;
+    padding:5px;
+    resize: none;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  #writer:focus, #writing:focus{
+    outline: none;
+    background-color:#dbe5f9;
+  }
+  .box {
+    display: flex;
+  }
+  .commentBox {
+    width: 70%;
+    padding:2vh 15px;
+    background-color: white;
+  }
+  .commentBox > div {
+    margin-bottom: 1vh;
+  }
+  .from {
+    font-size: 12pt;
+    font-weight: 800;
+    margin-bottom: 1vh;
+  }
+  .wrapper {
+    z-index: 50;
+  }
+  #emojiPik {
+    position: absolute;
+    right:0;
+    bottom:0;
+    padding: 20px 10px;
+    cursor:pointer;
+    font-size: 25pt;
+  }
+  #emojiPik:hover {
+    color: #ef8b9e;
+  }
+  .grid{
+    z-index: 1;
+  }
+  #nav {
+    z-index: 100;
+  }
+  @media only screen and (min-width: 2560px) {
+    #preview p{
+    margin: 2vh 0;
+  }
+    img {
+      display: block;
+      width: 80%;
+      margin: auto;
+    }
+    p {
+      font-size: 12pt;
+      line-height: 1.6;
+    }
+    button {
+      font-size:calc(2pt + 1.3vh);
+    }
+    button:hover {
+      background-color: #ef8b9e;
+      color: white;
+    }
+    textarea{
+      height: 15vh;
+    }
+    #preview {
+      padding-top: 2vh;
+    }
+    #Container {
+      margin: 0;
+      margin-left: 15px;
+    }
+    .inputcommentBox {
+      width: 70%;
+      padding:2vh 15px;
+      background-color: white;
+    }
+    .flower {
+      width: 30%;
+    }
+    
+    .grid-item{min-height: 11vh; width: calc(12.5% - 15px); margin-bottom: 30px; justify-content: flex-end;}
+    .gutter-sizer{width: 3%;}
+    
+    #openInput{display: none;}
+    section > label {display: none;}
+    #nav {display: none;}
+    body{margin-top: 2%;}
+  }
+
+  @media only screen and (min-width: 767px) and (max-width:  2560px) {
+
+    img {
+      display: block;
+      width: 80%;
+      margin: auto;
+    }
+    p {
+      font-size: 12pt;
+      line-height: 1.6;
+    }
+    #preview p{
+    margin: 2vh 0;
+  }
+    button {
+      font-size:calc(2pt + 1.3vw);
+    }
+    button:hover {
+      background-color: #ef8b9e;
+      color: white;
+    }
+    textarea{
+      height: 15vh;
+    }
+    #preview {
+      padding-top: 2vh;
+    }
+    #Container {
+      margin: 0;
+      margin-left: 15px;
+    }
+    .inputcommentBox {
+      width: 70%;
+      padding:2vh 15px;
+      background-color: white;
+    }
+    .flower {
+      width: 30%;
+    }
+    
+    .grid-item{min-height: 11vh; width: calc(25% - 15px); margin-bottom: 30px; justify-content: flex-end;}
+    .gutter-sizer{width: 3%;}
+    
+    #openInput{display: none;}
+    section > label {display: none;}
+  }
+
+  @media only screen and (max-width: 767px) {
+    #inputbox img{
+      display: block; 
+      height: 75%; 
+      margin: auto;
+    }
+    #back{position: absolute; top: 1vh; left: 0; width: 60px; height: 45px; background:url('./common/arrow.svg') no-repeat center top;}
+    p{font-size: 15px; line-height:20px; color: #2f5c9a;}
+    button{font-size: calc(14pt + 0.4rem);}
+    
+    textarea{height: 100%;}
+
+    #preview {
+      width: 100%;
+      height: 60%;
+      margin-top: 25%;
+    }
+    #preview p{
+      margin: 0;
+    }
+    #send {
+      height:20%;
+    }
+    input,textarea{
+      font-size: 14pt;
+    }
+    #Container {
+      margin: 0 5vw;
+      margin-bottom: 8vh;
+    }
+    .box {
+      margin-bottom: 15px;
+      gap: 10px;
+    }
+    .inputbox {
+      display: block;
+      position: fixed;
+      top: 100vh;
+      left: 0;
+      width: 100%;
+      height:100vh;
+      background: white;
+      padding: 0 5vw;
+      z-index: 10000;
+      transition: all 0.3s ease-in-out;
+    }
+    .commentBox {
+      flex: 7;
+    }
+    .inputcommentBox { 
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 5vw;
+      height: 40%;
+    }
+    .inputcommentBox > div {margin-bottom: 1vh;}
+    .inputcommentBox > div:nth-child(2) {height: 60%;}
+    .inputcommentBox > div > div {height: 100%;}
+    .from {
+      font-size:15px;
+    }
+    .flower {
+      flex: 3;
+    }
+    #emojiPik {
+      display: none;
+    }
+    .box img{
+      width:100%;
+      display: block;
+      padding-top: 2vh;
+    }
+    .gutter-sizer{width: 3%;}
+    section > label{width: 100%; height:8vh; position: fixed;bottom: 0; left: 0;  justify-content:center;   background-color: #76c3de; margin:0; border-radius:0; display: flex; align-items: center;}
+    #openInput:checked ~ .inputbox{top: 0; height:100%; transition: all 0.3s ease-in-out;}
+    label p{font-family: HV; font-size: calc(14pt + 0.4rem); font-weight: 500; text-align: center; color: #f8fafd;}
+  }
+</style>
+</head>
+<body id="body">
+  <div id="animationBackContainer"></div>
+  <div id="animationLeftContainer"></div>
+  <div id="animationRightContainer"></div>
+ <nav id="nav"> 
+      <a href="index.html" class="nav_title flex_8">
+        <p style="font-size:1.2rem; line-height: 1.25;">서울과학기술대학교 시각디자인전공 제40회 졸업전시</p>
+        <p style="font-size:clamp(3.45rem, 0.8281rem + 0.3581vw, 3.45rem); line-height: 1.0;">Celeblossom</p>
+      </a>
+      
+      <div class="nav_menu flex_3">
+        <a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
+        <a href="profile.html" class="flex_1">프로필<span>Profile</span></a>
+        <a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+        </div>
+  </nav>
+
+  <nav id="m_nav">
+    <header id="navHead">
+      <a href="index.html" id="index_title"><img src="./common/icon_40th.svg"></a>
+      <a href="index.html" id="detail_title">
+        <p class="mKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
+        <span class="mEn">English title row 1<br>English title row 2</span></a>
+      <div id="menuBtn">
+        <img src="./common/icon_mnav1.svg" class="menuBtn"></img>
+      </div>
+    </header>
+    <div id="navBox" class="menuWrap">
+        <a href="project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
+        <a href="profile.html">프로필 Profile</a>
+        <a href="guestbook.html">방명록 Blossom</a>
+    </div>
+
+  </nav>
+
+ 
+
+  <section id="Container" class="grid">
+    <input type="checkbox" name="openInput" value="openInput" id="openInput" style="display:none;">
+    <label for="openInput" >
+      <p>Celebrate!</p>
+    </label>
+    <div id="inputbox" class="box inputbox grid-item" >
+      <div id="back"></div>
+      <div id="preview" class="flower">
+          <p class="previewGuide" id="previewGuide">클릭하세요!</p>
+          <img src="./common/flower1.svg" id="flower">
+      </div>
+      <div class="inputcommentBox">
+        <div style="display:flex; align-items: baseline; width:100%;">
+          <p style="flex: 2;" class="from">From.</p>
+          <p style="flex: 8;">
+            <input id="writer" type="text" placeholder="작성자 이름 또는 별명">
+          </p>
+        </div>
+        <div>
+          <div style="position: relative;">
+            <textarea placeholder="축하 메시지를 적어보세요. (150자)" id="writing" maxlength="150" ></textarea>
+            <h3 id="emojiPik">&#128144</h3>
+          </div>
+        </div>
+        <button id="send">Congratulation!</button>
+      </div>
+    </div>
+  </section>
+
+<!--Emoji-->
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+<script type="text/javascript">
+if (matchMedia("only screen and (min-width: 767px)").matches) {  
+  const input = document.getElementById('writing');
+  const button = document.querySelector("#emojiPik");
+  const picker = new EmojiButton({
+  showPreview: false,
+  showRecents: false,
+  rows: 4,
+  autoHide: false,
+  position: 'bottom-start'
+});
+
+button.addEventListener('click', () => {
+  picker.togglePicker(button);
+});
+
+picker.on('emoji', emoji => {
+  
+  input.value += emoji;
+});
+};
+if (matchMedia("only screen and (min-width: 2560px)").matches){
+  var inputbox = document.getElementById('inputbox');
+  inputbox.remove();
+}
+</script>
+<!--Nav AutoHeight-->
+<script type="text/javascript">
+  var obj1 = document.getElementById('nav'); 
+  var obj2 = document.getElementById('m_nav');
+  var vh = window.innerHeight;
+  var obj1_height = obj1.offsetHeight;
+     if (matchMedia("only screen and (min-width: 767px)").matches) {
+    document.getElementById("Container").style.marginTop = obj1_height + 30 + 'px';
+
+  }
+  var obj2_height = obj2.offsetHeight;
+  if (matchMedia("only screen and (max-width: 767px)").matches) {
+    document.getElementById("Container").style.marginTop = obj2_height + 30 + 'px';
+    
+    document.getElementById('previewGuide').innerHTML = '이미지를 터치해 랜덤 꽃다발을 만들어보세요.';
+  }
+</script>
+
+<script>
+ var iconFlower = document.getElementById('flower');
+ var flowerNumber = 1;
+ iconFlower.onclick = function(){
+  flowerNumber++;
+  if (flowerNumber > 8) flowerNumber = 1;
+  iconFlower.src = "./common/flower" + flowerNumber + ".svg";
+ }
+
+ var backBtn = document.getElementById('back');
+ backBtn.onclick = function(){openInput.checked = false; 
+ }
+</script>
+
+<!-- Guestbook script -->
+<script type="text/javascript">
+  const showAnimation = () => {
+    const animationBackContainer = document.getElementById('animationBackContainer');
+    const animationLeftContainer = document.getElementById('animationLeftContainer');
+    const animationRightContainer = document.getElementById('animationRightContainer');
+    
+    animationBackContainer.style.display = 'block';
+    animationLeftContainer.style.display = 'block';
+    animationRightContainer.style.display = 'block';
+
+    const animItemBack = bodymovin.loadAnimation({
+      wrapper: animationBackContainer,
+      animType: 'svg',
+      loop: false,
+      path: './common/Anim_back.json'
+    });
+
+    const animItemLeft = bodymovin.loadAnimation({
+      wrapper: animationLeftContainer,
+      animType: 'svg',
+      loop: false,
+      path: './common/Anim_left.json'
+    });
+
+    const animItemRight = bodymovin.loadAnimation({
+      wrapper: animationRightContainer,
+      animType: 'svg',
+      loop: false,
+      path: './common/Anim_right.json'
+    });
+  }
+
+  const hideAnimation = () => {
+    const animationBackContainer = document.getElementById('animationBackContainer');
+    const animationLeftContainer = document.getElementById('animationLeftContainer');
+    const animationRightContainer = document.getElementById('animationRightContainer');
+    
+    animationBackContainer.style.display = 'none';
+    animationLeftContainer.style.display = 'none';
+    animationRightContainer.style.display = 'none';
+  }
+
+  window.onload = function() {
+    // check is it update
+    const isUpdate = localStorage.getItem('isUpdate');
+
+    if (isUpdate === 'true') {
+      showAnimation();
+      localStorage.setItem('isUpdate', 'false');
+
+      setTimeout(() => hideAnimation(), 3500);
+    }
+
+    // connect to the server
+    const initLoadData = () => {
+      buildGuestBook(itemData);
+
+      return;
+      /*
+      fetch("http://api.stvd2022.com/")
+        .then(res => {
+          if (res.ok) {
+            return res.json();
+          }  
+          throw new Error('네트워크에 문제가 발생했습니다. 잠시 후 다시 시도해주세요.');
+        })
+        .then(data => {
+          localStorage.setItem('guestbookData', JSON.stringify(data));
+          buildGuestBook(data);
+        })
+        .catch(error => {
+          console.log(error)
+        });
+      */
+    }
+
+    // build guestbooks
+    const buildGuestBook = (data) => {
+      const parentElement = document.querySelector('#Container');
+      const messageElement = parentElement.querySelectorAll('.message');
+      messageElement.forEach((item) => item.remove());
+
+      data.forEach((item) => {
+        const container = document.createElement('div');
+        container.className = "box grid-item message";
+        
+        const flower = document.createElement('div');
+        flower.className = "flower";
+
+        const GBflower = document.createElement('img');
+        GBflower.src = `./common/flower${item.flower}.svg`;
+
+        flower.appendChild(GBflower);
+
+        const commentBox = document.createElement('div');
+        commentBox.className = "commentBox";
+
+        const author = document.createElement('p');
+        author.className = "from";
+        author.innerHTML = `From.${item.author}`;
+
+        const comments = document.createElement('p');
+        comments.innerHTML = `${item.content}`;
+        comments.style = "word-break: break-all;";
+
+        commentBox.appendChild(author);
+        commentBox.appendChild(comments);
+
+        container.appendChild(flower);
+        container.appendChild(commentBox);
+
+        parentElement.appendChild(container);
+      })
+
+      Masonry();
+    }
+    
+    // Masonry
+    const Masonry = () => {
+      if (matchMedia("only screen and (min-width: 767px)").matches) {
+        const $grid = $('.grid');
+
+        $grid.imagesLoaded( function() {
+          // init Masonry after all images have loaded
+          $grid.masonry({
+            // options...
+            itemSelector: '.grid-item',
+            gutter: 15,
+            percentPosition: true,
+            resize: true,
+          });
+        });
+      };
+    }
+    /** 
+     * 졸업전시 종료로 더 이상 사용되지 않습니다.
+     */
+    const addMessage = () => {
+      alert('더 이상 새로운 방명록을 남길 수 없습니다.');
+      return;
+
+      const author = document.querySelector('#writer').value;
+      const contents = document.querySelector('#writing').value;
+      const data = {author, contents, flowerNumber};
+      if (!author) {
+        alert('작성자를 입력해주세요');
+        return;
+      }
+
+      if (!contents) {
+        alert('축하 메시지를 입력해주세요');
+        return;
+      }
+
+      
+      fetch("http://api.stvd2022.com/", {
+        method: 'POST', 
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      })
+      .then(res => {
+        if (res.ok) {
+          localStorage.setItem('isUpdate', 'true');
+          location.reload();
+          return;
+        }
+        throw new Error('네트워크에 문제가 발생했습니다. 잠시 후 다시 시도해주세요.');
+      })
+      .catch(error => {
+        console.log(error)
+      });
+    }
+
+    // event binding
+    const sendButton = document.querySelector('#send');
+    sendButton.addEventListener('click', addMessage);
+
+    // diff check
+    const diffCheck = () => {
+      // connect to the server
+      fetch("http://api.stvd2022.com/")
+        .then(res => {
+          if (res.ok) {
+            return res.json();
+          }  
+          throw new Error('네트워크에 문제가 발생했습니다. 잠시 후 다시 시도해주세요.');
+        })
+        .then(data => {
+          console.log('tick')
+          if (localStorage.getItem('guestbookData') !== JSON.stringify(data)) {
+            localStorage.setItem('isUpdate', 'true');
+            location.reload();
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        });
+    }
+
+    // init
+    initLoadData();
+    setInterval(() => diffCheck(), 5000);
+  }();
+</script>
+<script src="./common/nav.js"></script>
+<script src="./common/font.js"></script>
+<script src="./common/footer.js"></script>
+</body>
+</html>

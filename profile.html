@@ -1,0 +1,1107 @@
+<html>
+<head>
+	<meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>seoultech_vd_40th_test</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="icon" type="image/x-icon" href="./common/pav1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./common/mouse.css">
+  <link rel="stylesheet" type="text/css" href="./common/footer.css">
+  <link rel="stylesheet" type="text/css" href="./common/nav.css">
+  <link rel="stylesheet" type="text/css" href="./common/common.css">
+
+	<style type="text/css">
+  	/* 메인페이지 등에서는 index_title를 block, 개별 프로젝트 페이지에서는 detail_title을 block */
+  	#index_title{display: block;}
+  	#detail_title{display: none;}
+  	section{color: #13519c;}
+  	button{color: #13519c;}
+  	a:hover{color: #ef8b9e;}
+
+  	 /*profile 페이지용 foldable 코드*/
+		.collapsible, .content{height: auto;}
+		.collapsible {
+			cursor: pointer;
+			background-color: #f8fafd;
+			width: 100%;
+			border-top: solid #ef8b9e 1px;
+			display: flex;
+			text-align: left;
+			outline: none;
+			font-size: 0.9rem;}
+		.collapsible:hover{
+			background-color: #ef8b9e;}
+		.active{}
+		.content{
+			display: flex;
+			width: 100%;
+			overflow: hidden;
+			background-color: #f8fafd;
+			max-height: 0;
+			transition: max-height 0.2s ease-out;
+			font-size: 0.9rem;
+			line-height: 125%;}
+		.content img{width: 100%; padding: 10px;}
+		.content div[class*="index"]{
+			word-wrap: break-word;}
+		.hidden{display: none;}
+		.index_top{padding: 10px}
+		.index{padding: 0px 10px 10px;}
+		.mobilename{display: none;}
+		.sns{display: flex;}
+
+    @media only screen and (max-width: 767px){
+			.webmargin{display: none;}
+			.profile{margin-left: 5vw; margin-right: 5vw;}
+			.mobilename{display: block;}
+			.webname{display: none;}
+			.collapsible,.content{font-size: 13px;}
+			.sns{display: block;}
+			}
+	</style>
+
+</head>
+<body>
+	<!-- cursor 코드 -->
+	
+	
+
+
+
+
+
+	<nav id="nav"> 
+			<a href="index.html" class="nav_title flex_8">
+        <p style="font-size:1.2rem; line-height: 1.25;">서울과학기술대학교 시각디자인전공 제40회 졸업전시</p>
+        <p style="font-size:clamp(3.45rem, 0.8281rem + 0.3581vw, 3.45rem); line-height: 1.0;">Celeblossom</p>
+      </a>
+			
+			<div class="nav_menu flex_3">
+				<a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
+				<a href="profile.html" class="flex_1">프로필<span>Profile</span></a>
+				<a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+				</div>
+	</nav>
+
+	<nav id="m_nav">
+		<header id="navHead">
+			<a href="index.html" id="index_title"><img src="./common/icon_40th.svg"></a>
+			<a href="index.html" id="detail_title">
+				<p class="mKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
+				<span class="mEn">English title row 1<br>English title row 2</span></a>
+			<div id="menuBtn">
+				<img src="./common/icon_mnav1.svg" class="menuBtn"></img>
+			</div>
+		</header>
+		<div id="navBox" class="menuWrap">
+				<a href="project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
+				<a href="profile.html">프로필 Profile</a>
+				<a href="guestbook.html">방명록 Blossom</a>
+		</div>
+
+	</nav>
+
+
+
+	<section class="flex_6" style="display:flex; margin-top: 16vh;">
+		<div class="flex_1 webmargin"></div>
+		<section class="profile flex_4"><!--전체 졸전자 목록 포괄하는 박스--> 
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">고윤오</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Ko Yoonoh</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김가은</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">오운</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">Muluck</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Gaeun</div>
+							<div class="flex_1">	<a href="https://www.instagram.com/rkdms_2000/" target="_blank">Instagram<span class="webname"> @rkdms_2000</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/17100815/detail.html"><img src="./identity/17100815/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/service/17100815/detail.html"><img src="./service/17100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김다은</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">Meet</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">Way</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Daeun</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/ux/18100818/detail.html"><img src="./ux/18100818/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/service/18100818/detail.html"><img src="./service/18100818/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김도연</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">The Sweet Room</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">Cha:rming</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Doyeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/18100820/detail.html"><img src="./identity/18100820/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/service/18100820/detail.html"><img src="./service/18100820/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김도영</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">나의 길</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">향가</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Doyoung</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/illustration/16100901/detail.html"><img src="./illustration/16100901/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/editorial/16100901/detail.html"><img src="./editorial/16100901/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김민주</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">TMTM</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">deets</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Minjoo</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/ux/18100822/detail.html"><img src="./ux/18100822/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/service/18100822/detail.html"><img src="./service/18100822/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김민지</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">dorm dorm</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">제주지리서</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Minji</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.instagram.com/mind_naom/" target="_blank">Instagram<span class="webname"> @mind_naom</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/18100823/detail.html"><img src="./identity/18100823/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/editorial/18100823/detail.html"><img src="./editorial/18100823/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김세림</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">see near market</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">No way home</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Serim</div>
+							<div class="flex_1">	<a href="mailto:xerimuu@gmail.com"><span class="webname"></span>xerimuu@gmail.com</a>
+																<br><a href="https://www.instagram.com/xerimui_/" target="_blank">Behance<span class="webname"> @xerimui_</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/18100825/detail.html"><img src="./identity/18100825/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/video/18100825/detail.html"><img src="./video/18100825/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김아람</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">Water Pressure</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">Art Reflecting the Time</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Aram</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/illustration/19100841/detail.html"><img src="./illustration/19100841/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/editorial/19100841/detail.html"><img src="./editorial/19100841/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김주영</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">동족사냥</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">Object Kids</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Juyoung</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/illustration/18100833/detail.html"><img src="./illustration/18100833/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/video/18100833/detail.html"><img src="./video/18100833/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김지연</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">talk talk Planet</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">UN아동권리협약 - 아동권리현황</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Jiyeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>rlawldus1119@naver.com</a>
+																<br><a href="https://www.behance.net/jiyeon1119" target="_blank">Behance<span class="webname"> @jiyeon1119</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/18100836/detail.html"><img src="./identity/18100836/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/editorial/18100836/detail.html"><img src="./editorial/18100836/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김태연</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">KAWF Cup Festival</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">영원한 개화</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Taeyeon</div>
+							<div class="flex_1">	<a href="mailto:taenni_i@naver.com"><span class="webname"></span>taenni_i@naver.com</a>
+																<br><a href="https://www.behance.net/taenni_i" target="_blank">Behance<span class="webname"> @taenni_i</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/18100838/detail.html"><img src="./identity/18100838/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/video/18100838/detail.html"><img src="./video/18100838/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김현조</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname"></span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname"></span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Kim Hyunjo</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span></a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> </span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/illustration/18100840/detail.html"><img src="./illustration/18100840/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/editorial/18100840/detail.html"><img src="./editorial/18100840/thumb.webp"></a>
+						</div>
+
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">나윤경</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">대변인</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">아머러버</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Na Yungyoung</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span></a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank"><span class="webname"></span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/ux/18100846/detail.html"><img src="./ux/18100846/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/serviece/18100846/detail.html"><img src="./serviece/18100846/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">남승주</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">FRIGE CHECKER</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">WHO LIVES NEXT DOOR</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Nam Seungjoo</div>
+							<div class="flex_1">	<a href="mailto:zzsj6915@naver.com"><span class="webname"></span>zzsj6915@naver.com</a>
+																<br><a href="https://www.behance.net/zzsj691599e9" target="_blank">Behance<span class="webname"> @zzsj691599e9</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/19100851/detail.html"><img src="./identity/19100851/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/video/19100851/detail.html"><img src="./video/19100851/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">노희정</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">STAM</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">Color Wheel</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">No Heejung</div>
+							<div class="flex_1">	<a href="mailto:gmlwjd5956@naver.com"><span class="webname"></span>gmlwjd5956@naver.com</a>
+																<br><a href="https://www.instagram.com/stam_.17/" target="_blank">Instagram<span class="webname"> @stam_.17</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/illustration/17100841/detail.html"><img src="./illustration/17100841/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/editorial/17100841/detail.html"><img src="./editorial/17100841/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">도수미</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">동동</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">일상의 비일상</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Do Sumi</div>
+							<div class="flex_1">	<a href="mailto:aiky171005@gmail.com"><span class="webname"></span>aiky171005@gmail.com</a>
+																<br><a href="https://www.behance.net/aiky17" target="_blank">Behance<span class="webname"> @aiky17</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/17100842/detail.html"><img src="./identity/17100842/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/video/17100842/detail.html"><img src="./video/17100842/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">마선형</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">친애하는 당신에게</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">나의 우주</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Ma Seonhyeong</div>
+							<div class="flex_1">	
+																<a href="https://www.behance.net/im29/drafts" target="_blank">Behance<span class="webname"> @Ba guette</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/illustration/18100849/detail.html"><img src="./illustration/18100849/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/video/18100849/detail.html"><img src="./video/18100849/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">문성웅</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">제사의밤</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">카마</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Moon Seongwoong</div>
+							<div class="flex_1">	<a href="https://www.instagram.com/poo_ung/" target="_blank">Instagram<span class="webname"> @poo_ung</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/16100930/detail.html"><img src="./identity/16100930/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/video/16100930/detail.html"><img src="./video/16100930/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">박금강</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">냄새 이야기</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">냄새</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Park Geumgang</div>
+							<div class="flex_1">	<a href="mailto:rmarkd14@gmail.com"><span class="webname"></span>rmarkd14@gmail.com</a>
+																<br><a href="https://www.instagram.com/its_geumgangtime/" target="_blank">Instagram<span class="webname"> @its_geumgangtime</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/illustration/16100933/detail.html"><img src="./illustration/16100933/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">박세림</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">비연</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">어른, 같이</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Park Serim</div>
+							<div class="flex_1">	<a href="mailto:qkrtpfla123@gmail.com"><span class="webname"></span>qkrtpfla123@gmail.com</a>
+																<br><a href="https://www.instagram.com/re_eeemi/" target="_blank">Instagram<span class="webname"> @re_eeemi</span></a>
+								</div></div>
+						<a class="index flex_1" href="http://stvd2022.com/identity/18100853/detail.html"><img src="./identity/18100853/thumb.webp"></a>
+						<a class="index flex_1" href="http://stvd2022.com/service/18100853/detail.html"><img src="./service/18100853/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">박소희</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Park Sohee</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">박시원</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Park Siwon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">배가원</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Bae Gawon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">배세련</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Bae Seryeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">백미나</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Baek Mina</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">송도은</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Song Doeun</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">송채현</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Song Chaehyeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">신화연</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Shin Hwayeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">안수오</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Ahn Suoh</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">안예슬</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">An Yeseul</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">양희수</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Yang Heesoo</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">오재란</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Oh Jaeran</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">원준아</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Won Juna</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">유지원</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">You Jiwon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">유현영</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lyu Hyunyoung</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">윤예원</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Yoon Yewon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">으엉 티엣탄</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Ung Thiettan</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이규리</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Gyuree</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이미주</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Miju</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이병수</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Byoungsoo</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이예빛</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Yebit</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이유나</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Yoo Na</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이지현</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Jihyun</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이진희</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Jinhee</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">이희주</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lee Heeju</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">임비아</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Editorial</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Im Via</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">임주연</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Rhim Juyeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">임효선</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Lim Hyoseon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">장서현</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Jang Seohyeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">장윤하</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Jang Yoonha</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">정그린</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Jeong Green</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">정다현</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Jung Dahyun</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">정려립</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Illustration</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Jung Ryulip</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">정혜림</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Jeong Hyerim</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">최한솔</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Choe Hansol</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">최현서</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">AD·Service</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Choi Hyeonseo</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">한다민</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">Identity</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Han Damin</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">홍미현</div>
+						<div class="index_top flex_1"> </div>
+						<div class="index_top flex_1"><span class="webname">깡총깡촌</span><span class="mobilename">UX</span></div>
+						<div class="index_top flex_1"><span class="webname">깡촌토끼투어</span><span class="mobilename">Video</span></div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_2 sns">
+							<div class="flex_1">Hong Mihyeon</div>
+							<div class="flex_1">	<a href="mailto:koyoono21@gmail.com"><span class="webname"></span>koyoono21@gmail.com</a>
+																<br><a href="https://www.behance.net/yoonoko" target="_blank">Behance<span class="webname"> @yoonoko</span></a>
+								</div></div>
+						<a class="index flex_1" href="./ux/18100815/detail.html"><img src="./ux/18100815/thumb.webp"></a>
+						<a class="index flex_1" href="./video/18100815/detail.html"><img src="./video/18100815/thumb.webp"></a>
+						</div>
+
+		</section>
+		<div class="flex_1 webmargin"></div>
+	</section>
+
+
+
+<!-- 푸터 -->
+    <footer>
+      <img src="./common/footer_Left.svg" class="footer_Left">
+      <img src="./common/footer_Right.svg" class="footer_Right">
+      
+      <div>
+        <p class="footerKr">서울과학기술대학교</br>시각디자인전공 제40회 졸업전시</p>
+        <p class="footerEn">2022©Seoul National University of Science</br>and Technology. All Rights Reserved.</p>
+      </div>
+      <div class="flex">
+        
+          <a  class="link" href="https://vd.seoultech.ac.kr/" >
+            <img src="./common/seoultech.svg" class="seoultechIcon">
+            
+          </a>
+        
+          <a  class="link" href="https://www.instagram.com/snad_vd/">
+            <img src="./common/instagram.svg" class="instaIcon">
+            
+          </a>
+        
+      </div>
+         
+    </footer>
+
+  	<script src="./common/nav.js"></script>
+    <script src="./common/font.js"></script>
+    <script src="./common/footer.js"></script>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+		</script>
+
+</body>
+</html>

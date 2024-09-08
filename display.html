@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="icon" type="image/x-icon" href="./common/pav1.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./common/mouse.css" />
+    <link rel="stylesheet" type="text/css" href="./common/nav.css" />
+    <link rel="stylesheet" type="text/css" href="./common/common.css" />
+    <link rel="stylesheet" type="text/css" href="./common/footer.css" />
+    <title>방명록</title>
+    <style type="text/css">
+      *::-webkit-scrollbar {
+        display: none;
+      }
+      #index_title {
+        display: block;
+      }
+      #detail_title {
+        display: none;
+      }
+
+      body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      button {
+        border: 2px solid #2f5c9a;
+        color: #2f5c9a;
+        cursor: pointer;
+        background-color: white;
+        font-size: calc(2pt + 1.3vw);
+        font-weight: 500;
+        padding: 2%;
+        line-height: 1.3;
+      }
+      label {
+        width: 20%;
+        border-radius: 20%;
+        margin: 1vh 0 1vh 10px;
+        height: 10vh;
+        cursor: pointer;
+      }
+      textarea,
+      input {
+        font-family: inherit;
+        font-size: inherit;
+        text-size-adjust: none;
+      }
+      main {
+        height: auto;
+      }
+      #animationLeftContainer,
+      #animationRightContainer {
+        display: none;
+        position: fixed;
+        z-index: 21989491;
+        height: 100%;
+        bottom: 0;
+        aspect-ratio: 16 / 9;
+      }
+      #animationBackContainer {
+        display: none;
+        position: fixed;
+        z-index: 21989491;
+        height: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+        aspect-ratio: 16 / 9;
+      }
+      #animationRightContainer {
+        right: 0;
+      }
+      #preview p {
+        font-weight: bold;
+        text-align: center;
+        font-size: 12pt;
+      }
+      #preview_Guide {
+        text-align: center;
+      }
+      #selectButton {
+        display: flex;
+      }
+      label[for="f1"] {
+        margin-left: 0;
+      }
+      #inputContainer p {
+        margin-bottom: 1vh;
+      }
+      #send {
+        text-align: center;
+        width: 100%;
+      }
+      input,
+      textarea {
+        width: 100%;
+        border: 2px solid #2f5c9a;
+        font: inherit;
+        padding: 5px;
+        resize: none;
+        background-color: white;
+        box-sizing: border-box;
+      }
+      #writer:focus,
+      #writing:focus {
+        outline: none;
+        background-color: #dbe5f9;
+      }
+      .box {
+        display: flex;
+      }
+      .commentBox {
+        width: 70%;
+        padding: 2vh 15px;
+        background-color: white;
+      }
+      .commentBox > div {
+        margin-bottom: 1vh;
+      }
+      .from {
+        font-size: 12pt;
+        font-weight: 800;
+        margin-bottom: 1vh;
+      }
+      .wrapper {
+        z-index: 50;
+      }
+      #emojiPik {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 20px 10px;
+        cursor: pointer;
+        font-size: 25pt;
+      }
+      #emojiPik:hover {
+        color: #ef8b9e;
+      }
+      .grid {
+        z-index: 1;
+      }
+      #nav {
+        z-index: 100;
+      }
+      @media only screen and (min-width: 2560px) {
+        #preview p {
+          margin: 2vh 0;
+        }
+        img {
+          display: block;
+          width: 80%;
+          margin: auto;
+        }
+        p {
+          font-size: 12pt;
+          line-height: 1.6;
+        }
+        button {
+          font-size: calc(2pt + 1.3vh);
+        }
+        button:hover {
+          background-color: #ef8b9e;
+          color: white;
+        }
+        textarea {
+          height: 15vh;
+        }
+        #preview {
+          padding-top: 2vh;
+        }
+        #Container {
+          margin: 0;
+          margin-left: 15px;
+        }
+        .inputcommentBox {
+          width: 70%;
+          padding: 2vh 15px;
+          background-color: white;
+        }
+        .flower {
+          width: 30%;
+        }
+
+        .grid-item {
+          min-height: 11vh;
+          width: calc(12.5% - 15px);
+          margin-bottom: 30px;
+          justify-content: flex-end;
+        }
+        .gutter-sizer {
+          width: 3%;
+        }
+
+        #openInput {
+          display: none;
+        }
+        section > label {
+          display: none;
+        }
+        #nav {
+          display: none;
+        }
+        body {
+          margin-top: 2%;
+        }
+      }
+
+      @media only screen and (min-width: 767px) and (max-width: 2560px) {
+        img {
+          display: block;
+          width: 80%;
+          margin: auto;
+        }
+        p {
+          font-size: 12pt;
+          line-height: 1.6;
+        }
+        #preview p {
+          margin: 2vh 0;
+        }
+        button {
+          font-size: calc(2pt + 1.3vw);
+        }
+        button:hover {
+          background-color: #ef8b9e;
+          color: white;
+        }
+        textarea {
+          height: 15vh;
+        }
+        #preview {
+          padding-top: 2vh;
+        }
+        #Container {
+          margin: 15px 0 0 15px;
+        }
+        .inputcommentBox {
+          width: 70%;
+          padding: 2vh 15px;
+          background-color: white;
+        }
+        .flower {
+          width: 30%;
+        }
+
+        .grid-item {
+          min-height: 11vh;
+          width: calc(25% - 15px);
+          margin-bottom: 30px;
+          justify-content: flex-end;
+        }
+        .gutter-sizer {
+          width: 3%;
+        }
+
+        #openInput {
+          display: none;
+        }
+        section > label {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="animationBackContainer"></div>
+    <div id="animationLeftContainer"></div>
+    <div id="animationRightContainer"></div>
+
+    <div id="customCursor1" class="cursor">
+      <svg
+        id="cursor1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 84.61 84.61"
+      >
+        <path
+          class="cursor1_Fill"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+        <path
+          class="cursor1_Stroke"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+      </svg>
+    </div>
+
+    <div id="customCursor2" class="cursor">
+      <svg
+        id="cursor2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 84.61 84.61"
+      >
+        <path
+          class="cursor2_Fill"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+        <path
+          class="cursor2_Stroke"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+      </svg>
+    </div>
+
+    <div id="customCursor3" class="cursor">
+      <svg
+        id="cursor3"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 84.61 84.61"
+      >
+        <path
+          class="cursor3_Fill"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+        <path
+          class="cursor3_Stroke"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+      </svg>
+    </div>
+
+    <div id="customCursor4" class="cursor">
+      <svg
+        id="cursor4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 84.61 84.61"
+      >
+        <path
+          class="cursor2_Fill"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+        <path
+          class="cursor2_Stroke"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+      </svg>
+    </div>
+
+    <div id="customCursor5" class="cursor">
+      <svg
+        id="cursor5"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 84.61 84.61"
+      >
+        <path
+          class="cursor1_Fill"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+        <path
+          class="cursor1_Stroke"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+      </svg>
+    </div>
+
+    <div id="customCursor6" class="cursor">
+      <svg
+        id="cursor6"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 84.61 84.61"
+      >
+        <path
+          class="cursor3_Fill"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+        <path
+          class="cursor3_Stroke"
+          d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"
+        />
+      </svg>
+    </div>
+
+    <section id="Container" class="grid">
+      <input
+        type="checkbox"
+        name="openInput"
+        value="openInput"
+        id="openInput"
+        style="display: none"
+      />
+      <label for="openInput">
+        <p>Celebrate!</p>
+      </label>
+    </section>
+
+    <!--Emoji-->
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+    <script type="text/javascript">
+      if (matchMedia("only screen and (min-width: 767px)").matches) {
+        const input = document.getElementById("writing");
+        const button = document.querySelector("#emojiPik");
+        const picker = new EmojiButton({
+          showPreview: false,
+          showRecents: false,
+          rows: 4,
+          autoHide: false,
+          position: "bottom-start",
+        });
+      }
+      if (matchMedia("only screen and (min-width: 2560px)").matches) {
+        var inputbox = document.getElementById("inputbox");
+        inputbox.remove();
+      }
+    </script>
+    <!--Nav AutoHeight-->
+    <script type="text/javascript">
+      var obj1 = document.getElementById("nav");
+      var obj2 = document.getElementById("m_nav");
+      var vh = window.innerHeight;
+      var obj1_height = obj1.offsetHeight;
+      if (matchMedia("only screen and (min-width: 767px)").matches) {
+        document.getElementById("Container").style.marginTop =
+          obj1_height - 30 + "px";
+      }
+      var obj2_height = obj2.offsetHeight;
+      if (matchMedia("only screen and (max-width: 767px)").matches) {
+        document.getElementById("Container").style.marginTop =
+          obj2_height + 30 + "px";
+
+        document.getElementById("previewGuide").innerHTML =
+          "이미지를 터치해 랜덤 꽃다발을 만들어보세요.";
+      }
+    </script>
+
+    <!-- Guestbook script -->
+    <script type="text/javascript">
+      const showAnimation = () => {
+        const animationBackContainer = document.getElementById(
+          "animationBackContainer"
+        );
+        const animationLeftContainer = document.getElementById(
+          "animationLeftContainer"
+        );
+        const animationRightContainer = document.getElementById(
+          "animationRightContainer"
+        );
+
+        animationBackContainer.style.display = "block";
+        animationLeftContainer.style.display = "block";
+        animationRightContainer.style.display = "block";
+
+        const animItemBack = bodymovin.loadAnimation({
+          wrapper: animationBackContainer,
+          animType: "svg",
+          loop: false,
+          path: "./common/Anim_back.json",
+        });
+
+        const animItemLeft = bodymovin.loadAnimation({
+          wrapper: animationLeftContainer,
+          animType: "svg",
+          loop: false,
+          path: "./common/Anim_left.json",
+        });
+
+        const animItemRight = bodymovin.loadAnimation({
+          wrapper: animationRightContainer,
+          animType: "svg",
+          loop: false,
+          path: "./common/Anim_right.json",
+        });
+      };
+
+      const hideAnimation = () => {
+        const animationBackContainer = document.getElementById(
+          "animationBackContainer"
+        );
+        const animationLeftContainer = document.getElementById(
+          "animationLeftContainer"
+        );
+        const animationRightContainer = document.getElementById(
+          "animationRightContainer"
+        );
+
+        animationBackContainer.style.display = "none";
+        animationLeftContainer.style.display = "none";
+        animationRightContainer.style.display = "none";
+      };
+
+      window.onload = (function () {
+        // check is it update
+        const isUpdate = localStorage.getItem("isUpdate");
+
+        if (isUpdate === "true") {
+          showAnimation();
+          localStorage.setItem("isUpdate", "false");
+
+          setTimeout(() => hideAnimation(), 3500);
+        }
+
+        // connect to the server
+        const initLoadData = () => {
+          fetch("http://api.stvd2022.com/")
+            .then((res) => {
+              if (res.ok) {
+                return res.json();
+              }
+              throw new Error(
+                "네트워크에 문제가 발생했습니다. 잠시 후 다시 시도해주세요."
+              );
+            })
+            .then((data) => {
+              localStorage.setItem("guestbookData", JSON.stringify(data));
+              buildGuestBook(data);
+            })
+            .catch((error) => {
+              console.log(error);
+            });
+        };
+
+        // build guestbooks
+        const buildGuestBook = (data) => {
+          const parentElement = document.querySelector("#Container");
+          const messageElement = parentElement.querySelectorAll(".message");
+          messageElement.forEach((item) => item.remove());
+
+          data.forEach((item) => {
+            const container = document.createElement("div");
+            container.className = "box grid-item message";
+
+            const flower = document.createElement("div");
+            flower.className = "flower";
+
+            const GBflower = document.createElement("img");
+            GBflower.src = "./common/flower" + item.flower + ".svg";
+
+            flower.appendChild(GBflower);
+
+            const commentBox = document.createElement("div");
+            commentBox.className = "commentBox";
+
+            const author = document.createElement("p");
+            author.className = "from";
+            author.innerHTML = `From.${item.author}`;
+
+            const comments = document.createElement("p");
+            comments.innerHTML = `${item.content}`;
+            comments.style = "word-break: break-all;";
+
+            commentBox.appendChild(author);
+            commentBox.appendChild(comments);
+
+            container.appendChild(flower);
+            container.appendChild(commentBox);
+
+            parentElement.appendChild(container);
+          });
+
+          Masonry();
+        };
+
+        // Masonry
+        const Masonry = () => {
+          if (matchMedia("only screen and (min-width: 767px)").matches) {
+            const $grid = $(".grid");
+
+            $grid.imagesLoaded(function () {
+              // init Masonry after all images have loaded
+              $grid.masonry({
+                // options...
+                itemSelector: ".grid-item",
+                gutter: 15,
+                percentPosition: true,
+                resize: true,
+              });
+            });
+          }
+        };
+        // diff check
+        const diffCheck = () => {
+          // connect to the server
+          fetch("http://api.stvd2022.com/")
+            .then((res) => {
+              if (res.ok) {
+                return res.json();
+              }
+              throw new Error(
+                "네트워크에 문제가 발생했습니다. 잠시 후 다시 시도해주세요."
+              );
+            })
+            .then((data) => {
+              console.log("tick");
+              if (
+                localStorage.getItem("guestbookData") !== JSON.stringify(data)
+              ) {
+                localStorage.setItem("isUpdate", "true");
+                location.reload();
+              }
+            })
+            .catch((error) => {
+              console.log(error);
+            });
+        };
+
+        // init
+        initLoadData();
+        setInterval(() => diffCheck(), 5000);
+      })();
+    </script>
+    <script src="./common/mouse.js"></script>
+    <script src="./common/font.js"></script>
+    <script src="./common/footer.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>

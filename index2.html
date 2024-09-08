@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>seoultech_vd_40th_test</title>
+	<link rel="icon" type="image/x-icon" href="./common/pav1.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./common/mouse.css">
+  <link rel="stylesheet" type="text/css" href="./common/common.css">
+  <link rel="stylesheet" type="text/css" href="./common/footer.css">
+  <link rel="stylesheet" type="text/css" href="./common/nav.css">
+
+	<style type="text/css">
+  	/* about(메인) 페이지 스타일 */
+  	.main_section{display: block; margin: 25vh 0; vertical-align: baseline;}
+    .left {flex:49;  padding: 5rem 0 8rem 0; background: #76c3de;}
+    .right{flex:48;  padding: 5rem 0 8rem 0;}
+    .col1{flex:1;}
+    .col5{flex:5;}
+    .col7{flex:7;}
+    .col8{flex:8;}
+    .col33{flex:33; width:33vw; }
+    .col42{flex:42; widows: 42vw; padding-right: 7vw;}
+    .poster{background:url(./common/poster.webp) no-repeat left center fixed;  background-color: #76c3de;
+  background-size: 50% auto;}
+  	.text{font-size: clamp(1rem, 0.8281rem + 0.3581vw, 1.6875rem); line-height: 1.95;word-break: keep-all; letter-spacing: -0.4px; color: #13519c;}
+    .label {word-break: keep-all; letter-spacing: -.2; color:#f8fafd; font-weight: 800; }
+    .labelkr{font-size: clamp(1.45rem, 0.8281rem + 0.3581vw, 2.284rem); line-height: 1.95rem; padding-bottom: 1.267rem;}
+    .labelEn{font-size: clamp(1.5rem, 0.8281rem + 0.3581vw, 2.3rem); line-height: 1.75rem;}
+    .flex_1 {margin-right: 1rem;}
+    .flex_0 {margin-right: 1rem; flex:0;}
+    .comment{word-break:normal;}
+    .place div{line-height: 1.55;}
+    .textRight{text-align: right;}
+  	/* 메인페이지 등에서는 index_title를 block, 개별 프로젝트 페이지에서는 detail_title을 block */
+  	#index_title{display: block;}
+  	#detail_title{display: none;}
+    #big_section{display: flex;}
+
+    #Anim_main_container{
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    #Anim_main {
+      overflow: hidden;
+      z-index: -100;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      margin: auto;
+      height: 100vh;
+    }
+    #Anim_main > svg {
+      position: relative;
+      left: 50% !important;
+      transform: translate3d(-50%, 0, 0) !important;
+      width: auto !important;
+      height: 100%;
+      aspect-ratio: 16 / 9;
+    }
+
+  @media only screen and (max-width: 767px){
+      .main_section{display: block; margin: 10vh 5vw 0;}
+      .label{font-size: 20px; line-height: 24px; font-weight: 800;}
+      .text{font-size: 15px; line-height: 24px;}
+      #big_section{display: block;}
+      #Anim_main > svg {
+        transform: translate3d(-50%, 0, 0) scale3d(0.7, 0.7, 1) !important;
+
+      }
+      
+      .col5{display: none;}
+      .col7{display: none;}
+      .col8{display: none;}
+     
+      .left {flex:49;  padding: 7vw 5vw; background: #76c3de;}
+      .right{flex:48;  padding: 7vw 5vw;}
+      .remove {display: none;}
+      .text{font-size: clamp(1rem, 0.8281rem + 0.3581vw, 1.6875rem); line-height: 1.95;word-break: keep-all; letter-spacing: -0.4px; color: #13519c;}
+      .labelkr{font-size: clamp(1.25rem, 0.8281rem + 0.3581vw, 2.284rem); line-height: 1.95rem; padding-bottom:0.8rem;}
+      .labelEn{font-size: clamp(1.38rem, 0.8281rem + 0.3581vw, 2.3rem); line-height: 1.75rem;}
+       .comment{word-break:normal;}
+        .col42{flex:42; padding:0;}
+        .poster{background:url(./common/poster.webp) no-repeat left center fixed;  background-color: #76c3de;
+  background-size: 100% auto; height: 40rem;}
+  .lastChild > p:last-child {margin:0;
+    }  
+  }
+
+
+
+	</style>
+
+</head>
+
+<body id="body">
+	<!-- cursor 코드 -->
+
+
+	<nav id="nav"> 
+			<a href="index.html" class="nav_title flex_8">
+        <p style="font-size:clamp(3.45rem, 0.8281rem + 0.3581vw, 3.45rem); line-height: 1.0;">Celeblossom</p>
+        <p style="font-size:1.2rem; line-height: 1.25;">서울과학기술대학교 시각디자인전공 제40회 졸업전시</p>
+      </a>
+			
+			<div class="nav_menu flex_3">
+				<a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
+				<a href="profile.html" class="flex_1">프로필<span>Profile</span></a>
+				<a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+				</div>
+	</nav>
+
+	<nav id="m_nav">
+		<header id="navHead">
+			<a href="index.html" id="index_title"><img src="./common/icon_40th.svg"></a>
+			<a href="index.html" id="detail_title">
+				<p class="mKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
+				<span class="mEn">English title row 1<br>English title row 2</span></a>
+			<div id="menuBtn">
+				<img src="./common/icon_mnav1.svg" class="menuBtn"></img>
+			</div>
+		</header>
+		<div id="navBox" class="menuWrap">
+				<a href="project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
+				<a href="profile.html">프로필 Profile</a>
+				<a href="guestbook.html">방명록 Blossom</a>
+		</div>
+
+	</nav>
+
+<!-- 애니메이션 -->
+	<section class="flex_12" id="Anim_main_container">
+		<div id="Anim_main"></div>
+	</section>
+
+
+<!-- 본문 -->
+
+<div id="big_section">
+  <div style="" class="flex left poster">
+      <div class="col7" ></div>
+      <div class="col42">
+      </div>
+  </div>
+
+  <div class="flex right">
+      <div class="col5"></div>
+      <div class="col33"> 
+            <div class="text">The Blossom of Celebration: Celeblossom<br></div>
+            <div class="text"><br>우리는 최소 4년간의 학업을 거쳐 졸업작품이라는 결과를 피워냈습니다. 이 과정은 때로는 뿌듯하고, 때로는 괴롭고, 때로는 행복했습니다. 다양한 감정 속에서 졸업작품을 완성하는 시간은 결코 쉽지 않았기에, 우리는 수많은 감정을 느낀 만큼의 의미를 담아 스스로에게 건넬 수 있는 선물을 고민했습니다. 꽃다발은 축하와 위로, 격려와 감사 등의 많은 인사를 한 번에 담을 수 있는 선물입니다. 축하의 폭죽이 팡 터지는 듯한 꽃다발을 한 잎 한 잎 그려내며, 우리의 마음이 생생히 전해질 수 있기를 바랐습니다.<br><br>서울과학기술대학교 조형대학 디자인학과 시각디자인 프로그램 제40회 졸업전시에서는 성장의 시간을 거쳐 졸업을 마주하는 우리들에게, 스스로 축하와 격려의 꽃다발인 Celeblossom을 안깁니다.</div>
+      </div>  
+      <div class="col8"></div>
+  </div>
+</div>
+
+
+<div id="big_section">
+  <div style="" class="flex left">
+      <div class="col7" ></div>
+      <div class="col42">
+             <p class="label labelkr">서울과학기술대학교 조형대학 디자인학과
+              <br>시각디자인 프로그램 제 40회 졸업전시회</p>
+               <p class="label labelEn">Seoultech Dept. of Design
+              <br>Visual Communication Design
+              <br>40th Graduation Exhibition</p>
+      </div>
+  </div>
+
+   <div class="flex right">
+      <div class="col5"></div>
+      <div class="col33 flex"> 
+        <div class="text place">
+            <div class="flex"><p class=" flex_0">날짜</p><p>2022. 11. 08. - 2022. 11. 14.
+            </p></div>
+            <div class="flex"><p class=" flex_0">시간</p> <p>10:00 - 20:00</p></div>
+            <div class="flex"><p class=" flex_0">장소</p><p>서울과학기술대학교 백주년기념관 1F, 2F, 3F</p>
+            </div>
+            <div class="flex"><p class="remove flex_0" style="opacity: 0;">장소</p><p>Seoultech Centernnial Memorial Hall 1F, 2F, 3F</p></div>
+        </div>
+        <div class="place">
+            
+           
+            
+        </div>
+      </div>
+       <div class="col8"></div>
+    
+    </div>
+  </div>
+   
+
+<div id="big_section">
+  <div style="" class="flex left">
+      <div class="col7" ></div>
+      <div class="col42">
+             <p class="label labelkr">오시는 길</p>
+              <div id="map" style="width:100%; height: 400px;"></div>
+      </div>
+  </div>
+
+   <div class="flex right">
+      <div class="col5"></div>
+      <div class="col33"> 
+            <p class="label labelkr remove">오시는 길</p>
+            <p class="text">7호선 공릉역 - 노원13번 서울과학기술대학교정문앞<br>7호선 공릉역 - 노원03 서울과학기술대앞</p>
+
+      </div>
+      <div class="col8"></div>
+    </div>
+  </div>
+   
+<div id="big_section">
+  <div style="" class="flex left">
+      <div class="col7" ></div>
+      <div class="col42 flex comment">
+            <p class="label labelkr flex_1">격려사</p>
+            <p class="label labelkr ">디자인학과 시각디자인전공 학과장 <br>유은</p>
+      </div>
+  </div>
+
+   <div class="flex right">
+      <div class="col5"></div>
+      <div class="col33"> 
+         <div class="text comment">디자인학과 시각디자인전공 학생들의 40회 졸업전시회를 진심으로 축하합니다. 설레이는 마음으로 학교에 입학하여 다양한 수업과 여러가지 활동들을 통해 디자이너로서의 자질과 역량을 발전시키고 이제 사회로 나갈 준비가 된 여러분들이 자랑스럽습니다. 여러분은 이제 졸업전시를 맞이하게 되었습니다. 많은 에너지를 쏟아 준비한 만큼 졸업전시가 여러분의 기억에 남을 특별하고 소중한 경험이 되기를 바랍니다. 그리고 여러분들의 대학 생활동안 힘껏 여러분들을 응원하고 지원해주신 부모님들과 지도해주신 교수님들께도 학과장으로서 감사드립니다. 이제 학교를 떠나 사회로 나아가게 되는 여러분들이 각자 자신만이 가지고 있는 고유한 개성과 기질, 그리고 특별한 재능을 따라 여러분 한 사람 한 사람에게 가장 잘 맞는 길로 나아갈 수 있게 되기를 바랍니다. 그리고 그 길에서 만나게 될 수많은 다양한 경험들이 여러분들을 성장시키고 성숙시키는 값진 자산이 되길 바랍니다. 언제 어디서나 서울과학기술대학교 시각디자인과 동문임을 소중하게 여기는 여러분들이 되길 바랍니다. 여러분들을 응원합니다.</div>
+      </div>
+       
+      <div class="col8"></div>
+     </div>
+</div>
+</div>
+
+<div id="big_section">
+  <div style="" class="flex left">
+      <div class="col7" ></div>
+      <div class="col42">
+            <p class="label labelkr flex_1">전시 참가자</p>
+      </div>
+  </div>
+
+   <div class="flex right">
+      <div class="col5"></div>
+      <div class="col33"> 
+         <div class="flex lastChild">
+           <p class="text flex_1">고윤오<br>김가은<br>김다은<br>김도연<br>김도영<br>김민주<br>김민지<br>김세림<br>김아람<br>김주영<br>김지연<br>김태연<br>김현조<br>나윤경<br>남승주<br>노희정</p>
+           <p class="text flex_1">도수미<br>마선형<br>문성웅<br>박금강<br>박세림<br>박소희<br>박시원<br>배가원<br>배세련<br>백미나<br>송도은<br>송채현<br>신화연<br>안수오<br>안예슬<br>양희수</p>
+           <p class="text flex_1">오재란<br>원준아<br>유지원<br>유현영<br>윤예원<br>이규리<br>이미주<br>이병수<br>이예빛<br>이유나<br>이지현<br>이진희<br>이희주<br>임비아<br>임주연<br>임효선</p>
+           <p class="text flex_1">정서현<br>정그린<br>정다현<br>정려립<br>정혜림<br>최한솔<br>최현서<br>한다민<br>홍미현<br>으엉 티엣탄</p>
+         </div>
+        </div>
+       
+      <div class="col8"></div>
+     </div>
+</div>
+</div>
+
+<div id="big_section">
+  <div style="" class="flex left">
+      <div class="col7" ></div>
+      <div class="col42">
+            <p class="label labelkr flex_1">졸업준비위원회</p>
+      </div>
+  </div>
+
+   <div class="flex right">
+      <div class="col5"></div>
+      <div class="col33"> 
+         <div class="flex">
+            <div class="flex_1 col1 textRight">
+              <p class="text">위원장</p>
+              <p class="text">부위원장</p>
+            </div>
+            <div class="flex_1 col1">
+              <p class="text">최현서</p>
+              <p class="text">유현영</p>
+            </div>
+            <div class="flex_1 col1"></div>
+            <div class="flex_1 col1"></div>
+         </div>
+         <br>
+         <div class="flex">
+            <div class="flex_1 col1 textRight">
+              <p class="text">편집</p>
+            </div>
+            <div class="flex_1 col1">
+              <p class="text">남승주</p>
+              <p class="text">도수미</p>
+              <p class="text">장서현</p>
+            </div>
+            <div class="flex_1 textRight col1">
+              <p class="text">공간</p>
+            </div>
+            <div class="flex_1 col1">
+              <p class="text">최현서</p>
+              <p class="text">유현영</p>
+              <p class="text">임주연</p>
+            </div>
+         </div>
+         <div class="flex">
+            <div class="flex_1 textRight col1">
+              <p class="text">홍보</p>
+            </div>
+            <div class="flex_1 col1">
+              <p class="text">노덕영</p>
+              <p class="text">김은솔</p>
+            </div>
+            <div class="flex_1 textRight col1">
+              <p class="text">웹</p>
+            </div>
+            <div class="flex_1 col1">
+              <p class="text">김나윤</p>
+              <p class="text">김승민</p>
+            </div>
+         </div>
+       </div>
+       
+      <div class="col8"></div>
+     </div>
+</div>
+</div>
+
+
+
+
+
+ <!-- 푸터 -->
+    <footer>
+      <img src="./common/footer_Left.svg" class="footer_Left">
+      <img src="./common/footer_Right.svg" class="footer_Right">
+      
+      <div>
+        <p class="footerKr">서울과학기술대학교</br>시각디자인학과 제40회 졸업전시</p>
+        <p class="footerEn">2022©Seoul National University of Science</br>and Technology. All Rights Reserved.</p>
+      </div>
+      <div class="flex">
+        
+          <a  class="link" href="https://vd.seoultech.ac.kr/" >
+            <img src="./common/seoultech.svg" class="seoultechIcon">
+            
+          </a>
+        
+          <a  class="link" href="https://www.instagram.com/snad_vd/">
+            <img src="./common/instagram.svg" class="instaIcon">
+            
+          </a>
+        
+      </div>
+         
+    </footer>
+
+  	<script src="./common/nav.js"></script>
+    <script src="./common/font.js"></script>
+    <script src="./common/footer.js"></script>
+    <script src="./common/Anim_main.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=yc2ofvcytj"></script>
+    <script id="code">
+        var map = new naver.maps.Map('map', {
+            center: new naver.maps.LatLng(37.6305583,127.0784899), //지도의 초기 중심 좌표
+            zoom: 17, //지도의 초기 줌 레벨
+            minZoom: 8, //지도의 최소 줌 레벨
+            zoomControl: true, //줌 컨트롤의 표시 여부
+            zoomControlOptions: { //줌 컨트롤의 옵션
+                position: naver.maps.Position.TOP_RIGHT
+        }});
+        var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.6305583,127.0784899),
+
+            icon: {
+              url: "./common/map-icon.svg",
+              scaledSize: new naver.maps.Size(80, 80),
+              origin: new naver.maps.Point(0, 0),
+            },
+           
+            map: map
+        });
+    </script>
+</body>
+</html>
