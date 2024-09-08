@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+	/* 전체 구간에 적용되는 flex */
+	.flex_1{flex: 1;}
+    .flex_2{flex: 2;}
+    .flex_3{flex: 3;}
+    .flex_4{flex: 4;}
+    .flex_5{flex: 5;}
+    .flex_6{flex: 6;}
+    .flex_7{flex: 7;}
+    .flex_8{flex: 8;}
+    .felx_9{flex: 9;}
+    .flex_10{flex: 10;}
+    .flex_11{flex: 11;}
+    .flex_12{flex: 12;}
+
+
+    /* 데스크탑 나브 바 */
+    #m_nav{display: none;}
+	#nav { 	
+        z-index: 100;		
+		color: #13519c;
+		height: auto; 
+		position: fixed;
+    	top:0;
+    	width: 98vw;
+    	display: flex;
+    	justify-content: space-between;
+    	transition:all 0.3s ease;
+    	padding:1vh 1vw;
+    	font-weight: bold;}
+
+    #nav.hide {top: -18vh;}	
+
+    
+
+	.nav_title {font-size: calc(1rem + 3vw); white-space: nowrap; line-height: 1.2em; font-family: HV; }
+	.nav_title:hover {font-size: 0;}
+    .nav_title span{display: none; font-size: calc(1rem + 3vw);line-height: 1.2em;}
+  	.nav_title:hover span{display: block;}
+  	
+  	.nav_menu {display: flex; margin-top: 3px; font-size: calc(0.5rem + 1vw); text-align: right;}
+  	.nav_menu span{font-weight: 100; font-family: HV; color: #ef8b9e;}
+  	.nav_menu a:hover{font-size: 0;}
+    .nav_menu a {align-self: center; }
+  	.nav_menu a span{display: none; font-size: calc(0.5rem + 1vw); text-align: right; font-family: HV; color: #ef8b9e;line-height: 0.8;}
+  	.nav_menu a:hover span{display: block;}
+
+
+  	/* 모바일 나브 바 */
+ 
+@media only screen and (max-width: 767px){
+    img{width: 100%;}
+    #nav{display: none;}
+ 	#m_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        transition:all 0.3s ease;
+        padding:10px;
+	z-index:50;}
+    #m_nav.hide{top: -100vh;}
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        z-index: 30;
+    }
+    header a{z-index: 50;
+    }
+    #index_title{width: 55vw;
+    }
+
+    header p{font-family: sandoll-gothicneo2; font-size: 1.9rem; line-height: 2.4rem;}
+    header span{font-family: HV; font-size: 2rem;line-height: 2.1rem;}
+    #menuBtn{width: 70px; height: 70px; z-index: 100; cursor: pointer; position: relative; margin: 10px;}
+    .menuBtn{position: absolute; width: 45px;top: 0; right: 0; transition: all 0.3s ease-in-out; }
+
+
+    #navBox{
+        background-color:#f8fafd;
+        padding: 0 10px 20px;
+        height: auto;
+        width: 100vw;
+        z-index: 2;
+        left: 0;
+    }
+    #navBox a{
+        display: block;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        font-family: HV;
+    }
+
+
+    #dimmed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index:2;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .menuWrap{
+        position: fixed;
+        top: -100vh;
+        transition: all 0.3s ease-in-out;
+    }
+    .menuWrap.on{
+        top: 0;
+    }
+    .btnRotate {
+        transform: rotate(-90deg);
+        transition: all 0.3s ease-in-out;
+      }
+     .scrollLock { overflow:hidden !important; touch-action:none;}
+    }
+
+
+}
